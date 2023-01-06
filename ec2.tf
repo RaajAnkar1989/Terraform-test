@@ -8,12 +8,8 @@ resource "aws_instance" "demo" {
   vpc_security_group_ids    = [aws_security_group.allow_ssh.id]
 
   tags     = {
-    Name   = "EC2-Terraform-Instance1"
+    Name   = "EC2-Test-Machine"
   }
-}
-
-output "public_ip" {
-    value  = aws_instance.demo.public_ip
 }
 
 # Creates security group
