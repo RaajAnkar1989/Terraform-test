@@ -12,10 +12,6 @@ resource "aws_instance" "demo2" {
   }
 }
 
-output "public_ip" {
-    value  = aws_instance.demo.public_ip
-}
-
 # Creates security group
 resource "aws_security_group" "allow_ssh" {
   name        = "allow_ssh"
