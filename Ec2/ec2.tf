@@ -8,7 +8,7 @@ resource "aws_instance" "demo2" {
   vpc_security_group_ids    = [aws_security_group.allow_ssh.id]
 
   tags     = {
-    Name   = "EC2-Terraform-Instance2"
+    Name   = "EC2-Terraform-Instance3"
   }
 }
 
