@@ -1,6 +1,6 @@
 terraform {
   backend "s3" {
-    bucket = "b50-tf-state-bucket"
+    bucket = "raajankar"
     key    = "project/env/terrafom.tfstate"
     region = "us-east-1"
    }
