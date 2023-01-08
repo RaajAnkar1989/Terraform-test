@@ -18,6 +18,10 @@ resource "aws_route_table" "prt" {
     cidr_block = "0.0.0.0/0"
     gateway_id = aws_internet_gateway.gw.id
   }
+    route {
+    cidr_block = "0.0.0.0/0"
+    nat_gateway_id = aws_internet_gateway.gw.id
+  }
   tags = {
     Name = "private-rt"
   }
