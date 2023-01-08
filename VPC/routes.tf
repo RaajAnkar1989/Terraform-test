@@ -16,7 +16,7 @@ resource "aws_route_table_association" "a" {
   route_table_id = aws_route_table.rt.id
 }
 
-resource "aws_route_table" "rt1" {
+resource "aws_route_table" "prt" {
   vpc_id = aws_vpc.main.id
 
   route {
@@ -27,8 +27,8 @@ resource "aws_route_table" "rt1" {
     Name = "private-rt"
   }
   
-  resource "aws_route_table_association" "a1" {
+  resource "aws_route_table_association" "prt" {
   subnet_id      = aws_subnet.main1.id
-  route_table_id = aws_route_table.rt1.id
+  route_table_id = aws_route_table.prt.id
 }
 }
