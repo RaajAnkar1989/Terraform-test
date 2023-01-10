@@ -5,8 +5,4 @@ resource "aws_instance" "NewServer" {
   
   }
 
-tags  {
-    Name = "New-Server"
-  }
-
 variable "sg" {}
