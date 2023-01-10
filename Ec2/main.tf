@@ -5,7 +5,7 @@ resource "aws_instance" "NewServer" {
   
   }
 
-tags = {
+tags  {
     Name = "New-Server"
   }
 
