@@ -1,5 +1,5 @@
 resource "aws_spot_instance_request" "spot_worker" {
-  ami                       = data.aws_ami.my_ami.id
+  ami                       = "ami-00ff427d936335825"
   instance_type             = "t3.micro"
   wait_for_fulfillment      = true 
   vpc_security_group_ids    = [aws_security_group.allow_ssh.id]
